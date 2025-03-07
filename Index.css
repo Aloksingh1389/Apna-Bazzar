@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* width: 100%; */
+}
+
+body {
+    background-color: rgb(241, 219, 219);
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+/* .bimage {
+    background-image: url(Images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+.navbar{
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    gap: 100px;
+    margin-top: auto;
+    
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin: 20px;
+    margin: 80px;
+}
+
+.search {
+    color: black;
+
+
+}
+
+.navbar input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px 45px;
+    width: 350px;
+    height: 30px;
+    background-color: rgb(233, 233, 225);
+    border-radius: 20px;
+}
+
+.navbar ul {
+    overflow: auto;
+    margin-right: 100px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+
+}
+
+.navbar li {
+    float: right;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.navbar li a {
+    padding: 5px 5px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.navlink {
+    gap: 10px;
+
+}
+
+.navbar li select {
+    border: none;
+    outline: none;
+}
+
+#cart-item .cart-item-count {
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.main-body{
+    top: 100px;
+}
+
+.slide-section {
+    
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    margin: 20px 0;
+    position: relative;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
+.slide {
+    height: 50vh;
+    image-resolution: 200px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.slide img {
+    border-radius: 30px;
+}
+.slide-section::-webkit-scrollbar {
+    width: 0px;
+}
+
+.rec_cat {
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.products {
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    height: 220px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 150px;
+    height: 200px;
+    column-gap: 10px;
+    flex-shrink: 0;
+}
+
+.rec_cat::-webkit-scrollbar {
+    width: 0px;
+}
+
+.product img {
+    border-radius: 20px;
+    height: 140px;
+    width: 140px;
+    margin-top: 5px;
+}
+
+.product a {
+    text-decoration: none;
+    color: black;
+}
+
+.shop{
+    padding: 100px 9% 30px;
+}
+
+.section-title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+}
+
+.product-box .img-box{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+    transition: 0.5s;
+}
+.foot{
+    height: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    color: white;
+    display: flex;  
+}
+
+.connection{
+    width: 50%;
+    padding: 20px;
+    border: 2px solid rgb(38, 35, 35); 
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+}
+.connection a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.apna{
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.819);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0%;
+    border-radius: 10px;
+}
+ 
+.apna a{
+    text-decoration: none;
+    color: white;
+}
