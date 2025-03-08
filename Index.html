@@ -16,130 +16,115 @@
 </head>
 
 <body>
-    <div class="bimage">
-        <header>
-            <nav class="navbar">
-                <img src="Logo.jpg" alt="Logo" class="logo">
-                <div class="search">
-                    <input type="text" name="search" id="search" placeholder="Search your item">
+    <header>
+        <nav class="navbar">
+            <img src="Logo.jpg" alt="Logo" class="logo">
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search your item">
+            </div>
+            <ul>
+                <li>
+                    <select name="" id="Category" class="items">
+                        <option value="">Category</option>
+                        <option value="">Beauty</option>
+                        <option value="">Fashion</option>
+                        <option value="">Food</option>
+                        <option value="">Grocery</option>
+                        <option value="">Electricals</option>
+                        <option value="">Medicines</option>
+                        <option value="">Hardware</option>
+                        <option value="">Furniture</option>
+                    </select>
+                </li>
+                <li><a href="Login.html" class="navlink"><i class="fa-solid fa-user"></i>Login</a></li>
+                <div id="cart-item">
+                    <i class="ri-shopping-cart-2-fill"></i>
+                    <span class="cart-item-count"></span>
                 </div>
-                <ul>
-                    <li>
-                        <select name="" id="Category" class="items">
-                            <option value="">Category</option>
-                            <option value="">Beauty</option>
-                            <option value="">Fashion</option>
-                            <option value="">Food</option>
-                            <option value="">Grocery</option>
-                            <option value="">Electricals</option>
-                            <option value="">Medicines</option>
-                            <option value="">Hardware</option>
-                            <option value="">Furniture</option>
-                        </select>
-                    </li>
-                    <div id="cart-item">
-                        <i class="ri-shopping-cart-2-fill"></i>
-                        <span class="cart-item-count"></span>
-                    </div>
-                    <li><a href="Login.html" class="navlink"><i class="fa-solid fa-user"></i>Login</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- ----------------------Hereis the products sliding sections-------------------------- -->
-        <section class="main-body">
-            <section class="slide-section" id="promosection">
-                <div class="slide">
-                    <img src="Images/Beauty.jpg" alt="Slide1">
-                </div>
-                <div class="slide">
-                    <img src="Images/Fashion.jpg" alt="Slide2">
-                </div>
-                <div class="slide">
-                    <img src="Images/furnitures.jpg" alt="Slide3">
-                </div>
-                <div class="slide">
-                    <img src="Images/Gadgets.jpg" alt="Slide4">
-                </div>
-                <div class="slide">
-                    <img src="Images/Grocery.jpg" alt="Slide5">
-                </div>
-                <div class="slide">
-                    <img src="Images/Hardware.jpg" alt="Slide6">
-                </div>
-                <div class="slide">
-                    <img src="Images/Medicine.jpg" alt="Slide7">
-                </div>
-                <div class="slide">
-                    <img src="Images/Food.jpg" alt="Slide8">
-                </div>
-            </section>
-            <script>
-                // Delay the sliding section by 3 seconds
-                setTimeout(() => {
-                    document.getElementById("promoSection").classList.add("show");
-                }, 3000); // 3 seconds delay
+            </ul>
+        </nav>
+    </header>
+    <!-- ----------------------Hereis the products sliding sections-------------------------- -->
 
-                // You can also change to 4 seconds for a slightly longer delay:
-                // setTimeout(() => {
-                //     document.getElementById("promoSection").classList.add("show");
-                // }, 4000); // 4 seconds delay
-            </script>
+    <script>
+        // Delay the sliding section by 3 seconds
+        setTimeout(() => {
+            document.getElementById("promoSection").classList.add("show");
+        }, 3000); // 3 seconds delay
 
-            <!--------------------------- Here is the product catogery section  ------------------->
-            <section class="rec_cat">
-                <div class="products">
-                    <div class="product">
-                        <a href="#">
-                            <img src="Images/Beauty.jpg" alt="product">
-                            <h2>Beauty</h2>
-                        </a>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="Images/Fashion.jpg" alt="product">
-                            <h2>Fashion</h2>
-                        </a>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="Images/Pizza.jpg" alt="product">
-                            <h2>Food</h2>
-                        </a>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="Images/Grocery.jpg" alt="product">
-                            <h2>Grocery</h2>
-                        </a>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="Images/Gadgets.jpg" alt="product">
-                            <h2>Electrical</h2>
-                        </a>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="Images/medicine.jpg" alt="product">
-                            <h2>Medicine</h2>
-                        </a>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="Images/hardware.jpg" alt="product">
-                            <h2>Hardware</h2>
-                        </a>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="Images/furnitures.jpg" alt="product">
-                            <h2>Furniture</h2>
-                        </a>
-                    </div>
-                </div>
-            </section>
+        // You can also change to 4 seconds for a slightly longer delay:
+        // setTimeout(() => {
+        //     document.getElementById("promoSection").classList.add("show");
+        // }, 4000); // 4 seconds delay
+    </script>
+    <div class="slider-cont">
+        <div class="slider">
+            <img src="Images/Beauty.jpg" alt="Slide1">
+            <img src="Images/Fashion.jpg" alt="Slide2">
+            <img src="Images/furnitures.jpg" alt="Slide3">
+            <img src="Images/Gadgets.jpg" alt="Slide4">
+            <img src="Images/Grocery.jpg" alt="Slide5">
+            <img src="Images/Hardware.jpg" alt="Slide6">
+            <img src="Images/Medicine.jpg" alt="Slide7">
+            <img src="Images/Food.jpg" alt="Slide8">
+        </div>
+    </div>
+    <!--------------------------- Here is the product catogery section  ------------------->
+    <div class="rec_cat">
+        <h2 class="text">Category</h2>
+        <div class="category">
+            <div class="catg-box" style="background-image: url('Images/Beauty.jpg');">
+                <p>Beauty</p>
+            </div>
+            <div class="catg-box" style="background-image: url('Images/Fashion.jpg');">
+                <p>Fashion</p>
+            </div>
+            <div class="catg-box" style="background-image: url('Images/Pizza.jpg');">
+                <p>Pizza</p>
+            </div>
+            <div class="catg-box" style="background-image: url('Images/Grocery.jpg');">
+                <p>Grocery</p>
+            </div>
+            <div class="catg-box" style="background-image: url('Images/Gadgets.jpg');">
+                <p>Gadgets</p>
+            </div>
+            <div class="catg-box" style="background-image: url('Images/medicine.jpg');">
+                <p>Medicine</p>
+            </div>
+            <div class="catg-box" style="background-image: url('Images/hardware.jpg');">
+                <p>Hardware</p>
+            </div>
+            <div class="catg-box" style="background-image: url('Images/furnitures.jpg');">
+                <p>Furnitures</p>
+            </div>
+        </div>
     </div>
     <!--------------------------- here is the prodects with price--------------->
+
+    <div class="cart">
+         <h2 class="cart-title">your Cart</h2>
+         <div class="cart-content">
+            <div class="cart-box">
+                <img src="Images/hoodie.jpg" alt="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-detail">Hoodie</h2>
+                    <span class="cart-price">₹ 500</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div>
+         </div>
+         <div class="total">
+            <div class="total-title">Total</div>
+                <div class="total-price">₹ 0</div>
+         </div>
+         <button class="btn-buy">Buy Now</button>
+         <i class="ri-close-line" id="cart-close"></i>
+    </div>
     <section class="shop">
         <h1 class="section-title">Shop products</h1>
         <div class="product-content">
@@ -151,7 +136,6 @@
                 <div class="price-and-cart">
                     <span class="price">₹ 500</span>
                     <i class="ri-shopping-cart-2-fill"></i>
-                    <button class="add-to-cart">Add to cart</button>
                 </div>
             </div>
             <div class="product-box">
@@ -162,7 +146,6 @@
                 <div class="price-and-cart">
                     <span class="price">₹ 800</span>
                     <i class="ri-shopping-cart-2-fill"></i>
-                    <button class="add-to-cart">Add to cart</button>
                 </div>
             </div>
             <div class="product-box">
@@ -173,7 +156,6 @@
                 <div class="price-and-cart">
                     <span class="price">₹ 400</span>
                     <i class="ri-shopping-cart-2-fill"></i>
-                    <button class="add-to-cart">Add to cart</button>
                 </div>
             </div>
             <div class="product-box">
@@ -184,7 +166,46 @@
                 <div class="price-and-cart">
                     <span class="price">₹ 700</span>
                     <i class="ri-shopping-cart-2-fill"></i>
-                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Images/Kurti.jpg" alt="">
+                </div>
+                <h2 class="product-title">Kurti</h2>
+                <div class="price-and-cart">
+                    <span class="price">₹ 900</span>
+                    <i class="ri-shopping-cart-2-fill"></i>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Images/Mens printed tshirt.jpg" alt="">
+                </div>
+                <h2 class="product-title">mens printed t-shirt</h2>
+                <div class="price-and-cart">
+                    <span class="price">₹ 299</span>
+                    <i class="ri-shopping-cart-2-fill"></i>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Images/Black hoodie.jpg" alt="">
+                </div>
+                <h2 class="product-title">Black hoodie</h2>
+                <div class="price-and-cart">
+                    <span class="price">₹ 1200</span>
+                    <i class="ri-shopping-cart-2-fill"></i>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Images/white-t_shirt.jpg" alt="" height="395px">
+                </div>
+                <h2 class="product-title">White-t_shirt</h2>
+                <div class="price-and-cart">
+                    <span class="price">₹ 349</span>
+                    <i class="ri-shopping-cart-2-fill"></i>  
                 </div>
             </div>
         </div>
@@ -209,6 +230,6 @@
         </div>
     </footer>
     </section>
+    <script src="script.js"></script>
 </body>
-
 </html>
